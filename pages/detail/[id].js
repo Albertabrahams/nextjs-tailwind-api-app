@@ -9,7 +9,19 @@ const Detail = () => {
 
     return (
         <div>
-            <h1>Detail {id}</h1>
+            
+            {data?.filter(item => item.id == id).map(item =>
+                <div className="flex flex-col items-center" key={id} >
+                    <h1 className="text-4xl mb-2">{item.name}</h1>
+                    <img src={item.image} alt="foto" width="150px" />
+                    <p className="text-xl">{item.species}</p>
+                    <p className="text-xl">{item.status}</p>
+                    <p className="text-xl">{item.gender}</p>
+                    <p className="text-xl">{item.location.name}</p>
+                    <p className="text-xl">{item.origin.name}</p>
+                </div>
+            )}
+
         </div>
     )
 }

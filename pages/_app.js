@@ -2,12 +2,12 @@ import { Provider } from '../context'
 import '../styles/globals.css'
 
 
-function MyApp({ Component, pageProps }) {
-  <div>
+function MyApp({ Component, pageProps }) {  
+  return (
   <Provider>
-  return <Component {...pageProps} />
+  <Component {...pageProps} />
   </Provider>
-  </div>
+  )
 }
 
 export default MyApp

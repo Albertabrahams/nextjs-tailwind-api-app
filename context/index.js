@@ -12,7 +12,6 @@ const Provider = ({ children }) => {
 
     const fetchData = async () => {
     const result = await axios(`https://rickandmortyapi.com/api/character?page=${page}`);
-    console.log(result.data.results);
     setData(result.data.results); }
     
     useEffect(() => {

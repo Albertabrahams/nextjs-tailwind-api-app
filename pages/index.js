@@ -9,12 +9,6 @@ export default function Home() {
   const HandleSearch = (e) => {
     fetchData();
     }
-  
-    useEffect(() => {
-      console.log("object");
-    }, [])
-    
-  
 
   return (
     <div>
@@ -23,7 +17,7 @@ export default function Home() {
       className="flex items-center bg-gray-500"
       placeholder='Enter a page number..' />
       <button onClick={HandleSearch} className="bg-blue-600" >Search</button>
-      <div className='grid grid-cols-5' >
+      <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1' >
         {data.map(item => 
           <Link href={`/detail/${(item.id)}`} key={item.id}>
           <div className="m-3 rounded border-2 flex flex-col items-center">
