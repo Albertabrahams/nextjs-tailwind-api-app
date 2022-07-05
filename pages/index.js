@@ -29,7 +29,7 @@ export default function Home() {
           <Link href={`/detail/${(item.id)}`} key={item.id}>
             <div className="m-3 rounded border-2 flex flex-col items-center bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
               <p className='font-serif font-bold p-1 text-xl m-1'>{item.name}</p>
-              <img src={item.image} alt="foto" width="150px" className='pb-2'/>
+              <image src={item.image} alt="foto" width="150px" className='pb-2'/>
             </div>
           </Link>
         )}

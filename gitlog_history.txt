@@ -1,3 +1,14 @@
+commit 8dd6c0b0415647263699c021f80adc1764d568fb
+Author: Albertabrahams <halilibrahim.soyman@gmail.com>
+Date:   Tue Jul 5 12:52:26 2022 +0300
+
+    done
+
+ gitlog_history.txt   | 49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ pages/detail/[id].js | 16 ++++++++--------
+ pages/index.js       | 41 ++++++++++++++++++++++++-----------------
+ 3 files changed, 81 insertions(+), 25 deletions(-)
+
 commit 9c3450987ba5ac2a3d4f0c93d86515921532391c
 Author: Albertabrahams <halilibrahim.soyman@gmail.com>
 Date:   Tue Jul 5 01:48:49 2022 +0300
