@@ -1,3 +1,24 @@
+commit 9145599997c9767a8948c492f12f06aff6d5ddd2
+Author: Albertabrahams <halilibrahim.soyman@gmail.com>
+Date:   Tue Jul 5 13:07:51 2022 +0300
+
+    img edit
+
+ pages/detail/[id].js | 2 +-
+ pages/index.js       | 5 +++--
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+
+commit 3e469944e84f148ba7ae70b8833c74b47d4b3e16
+Author: Albertabrahams <halilibrahim.soyman@gmail.com>
+Date:   Tue Jul 5 12:56:42 2022 +0300
+
+    edit image
+
+ gitlog_history.txt   | 11 +++++++++++
+ pages/detail/[id].js |  2 +-
+ pages/index.js       |  2 +-
+ 3 files changed, 13 insertions(+), 2 deletions(-)
+
 commit 8dd6c0b0415647263699c021f80adc1764d568fb
 Author: Albertabrahams <halilibrahim.soyman@gmail.com>
 Date:   Tue Jul 5 12:52:26 2022 +0300
