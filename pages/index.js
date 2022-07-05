@@ -2,6 +2,7 @@ import axios from 'axios';
 import Link from 'next/link'
 import { useContext } from 'react';
 import { Context } from '../context';
+import Image from 'next/image'
 
 export default function Home() {
   const { data, setPage, fetchData } = useContext(Context)
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <form className="flex items-center">
-        <label for="simpleSearch" className="sr-only">Search</label>
+        
         <div className="relative w-full">
           <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
             <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"></path></svg>
@@ -29,7 +30,7 @@ export default function Home() {
           <Link href={`/detail/${(item.id)}`} key={item.id}>
             <div className="m-3 rounded border-2 flex flex-col items-center bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
               <p className='font-serif font-bold p-1 text-xl m-1'>{item.name}</p>
-              <image src={item.image} alt="foto" width="150px" className='pb-2'/>
+              <picture><img src={item.image} alt="foto" width="150px" height="100px" className='pb-2'/></picture>
             </div>
           </Link>
         )}
