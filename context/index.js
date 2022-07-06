@@ -12,11 +12,11 @@ const Provider = ({ children }) => {
 
     const fetchData = async () => {
     const result = await axios(`https://rickandmortyapi.com/api/character?page=${page}`);
-    setData(result.data.results); }
+    setData([...data , ...result.data.results])}
     
     useEffect(() => {
         fetchData();
-    }, []);
+    }, [page]);
   
 
   return <Context.Provider value={{data, page, setPage, fetchData }}>{children}</Context.Provider>;

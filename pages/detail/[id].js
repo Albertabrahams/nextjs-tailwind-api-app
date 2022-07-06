@@ -4,9 +4,9 @@ import { Context } from '../../context'
 
 const Detail = () => {
     const router = useRouter()
-    const { id } = router.query
+    const { id } = router.query 
     const {data} = useContext(Context)
-
+    console.log(data);
     return (
         <div>
             
